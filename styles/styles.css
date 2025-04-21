@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-primaria: #f6b0ce;
+    --cor-secundaria: #5ebbd6;
+    --cor-terciaria: #9ed9eb;
+    --fonte-doc: "Open Sans", sans-serif;
+
+}
+body{
+    
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: var(--fonte-doc);
+    font-weight: 400;
+    color: var(--cor-primaria)
+}
+.menu__link{
+    padding: 2% 0 0 15%;
+    display: flex;
+    gap: 40px;
+}
+.menu__link__item{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-doc);
+    font-weight: 600;
+    width: 150px;
+    border-radius: 7px;
+    text-align: center;
+    padding: 10px 10px;
+    border:none;
+    background-color: var(--cor-terciaria);
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+    
+}
+.menu__link__item:hover{
+    background-color: var(--cor-primaria);
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.apresentacao__texto{
+    font-family: var (--fonte-doc);
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 615px;
+   
+}
+
+.destaque{
+    color: var(--cor-primaria);
+    font-weight: 800;
+    text-align: center;
+}
+
+.rodape{
+    font-family: var(--fonte-doc);
+    font-size: 10px;
+    color: white;
+    background-color: var(--cor-primaria);
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.imagem{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 2vw;
+}
+.imagens__itens{
+    width: 340px;
+    height: 340px;
+    border: 10px solid #FFF;
+    box-shadow: 5px 5px 5px #0006;
+    flex-grow: 1;
+    transition: transform .5s linear;
+    border-radius: 10px;
+}
+.imagens__itens img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.imagens__itens:hover{
+    transform: scale(1.3);
+}
