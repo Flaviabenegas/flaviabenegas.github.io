@@ -68,7 +68,7 @@ body{
 }
 
 .destaque{
-    color: var(--cor-primaria);
+    color: var(--cor-secundaria);
     font-weight: 800;
     text-align: center;
 }
